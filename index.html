@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Health Connector Plan Shopping Guide</title>
+	<meta charset="UTF-8">
+
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="css/collapzion.css" rel="stylesheet" type="text/css">
+<link href="css/styles.css" rel="stylesheet" type="text/css">
+<style>
+main {
+    padding: 0;
+    margin: 0;
+}
+#welcome {
+    background-image: url(images/health-insurance-bg.png);
+    background-color: rgba(22,95,128,1.00);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: soft-light;
+    background-attachment: scroll;
+    width: 100%;
+    height: 80vh;
+    margin-top: 0;
+    padding-top: 0;
+}
+#welcome div {
+    width: 100%;
+    background-color: rgba(255,255,255,0.9);
+    border: none;
+    box-shadow: none;
+    position: sticky;
+    top: 25%;
+    left: 25%;
+    z-index: 1;
+    align-content: center;
+}
+#welcome div h1 {
+    color: rgb(15,94,130);
+    font-size: 2rem;
+}
+#welcome div p {
+    color: rgb(15,94,130);
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 0;
+}
+#coverage-type-select {
+    margin: 3rem 0;
+}
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+@media screen and (min-width: 768px) {
+#welcome div {
+    width: 50%;
+}
+#welcome div h1 {
+    color: rgb(15,94,130);
+    font-size: 2.5rem;
+}
+#welcome div p {
+    color: rgb(15,94,130);
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 0;
+}
+}
+</style>
+</head>
+<body>
+<!--<div id="btncollapzion" class="btn_collapzion"></div>
+--><header> <a href="index.html"><img src="images/logomark.svg" alt="Health Connector Logo" id="logo"></a>
+  <nav class="navbar"> <span id="navbar-toggle"><em class="material-icons">menu</em> </span>
+    <ul id="main-nav">
+      <li> <a href="index.html" class="nav-links">Home</a> </li>
+      <li> <a href="prepare-to-shop.html" class="nav-links">Prepare to Shop</a> </li>
+      <li> <a href="faqs.html" class="nav-links">FAQs</a> </li>
+      <li> <a href="get-help.html" class="nav-links">Get Help</a> </li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <section id="welcome">
+    <div>
+      <h1>Health Insurance Shopping Guide</h1>
+      <p>Choosing the right health insurance for you and your family is an important decision. We understand, and we want you to feel confident in your choice. Use this guide to help you find the insurance plan that's right for you. Let's get started!</p>
+      <p><i class="material-icons"> keyboard_arrow_down</i></p>
+    </div>
+  </section>
+  <section>
+    <h2>What type of coverage do you qualify for?</h2>
+    <div id="coverage-type-select">
+      <button id="connectorcareBtn" onclick="displayConnectorCare()">ConnectorCare Plans</button>
+      <button id="qhpBtn" onclick="displayQhp()">Health Connector Plans</button>
+      <button id="masshealthBtn">MassHealth</button>
+    </div>
+  </section>
+  <section id="connectorcare">
+    <div>
+      <h2>Know which ConnectorCare plans are available for you</h2>
+      <p>First, you'll need to know which plans are available to you, based on where  you live. You can find the ConnectorCare plans available in your  area in your renewal letter (if you are already a member), or by signing into your account and shopping for plans from the "My Eligibility" page.</p>
+      <a href="https://www.mahealthconnector.org/learn/plan-information/connectorcare-plans">
+      <button type="button">Learn about ConnectorCare plans</button>
+      </a> </div>
+    <div>
+      <h2>Compare your monthly premium costs</h2>
+      <p>Your ConnectorCare plan choices have different monthly premium costs,  depending on the insurance company offering the plan. Covered benefits  and out-of-pocket costs are the same for all plans. </p>
+      <a href="https://www.mahealthconnector.org/wp-content/uploads/ConnectorCare_Overview-2018.pdf">
+      <button type="button">Learn about costs</button>
+      </a> </div>
+    <div>
+      <h2>Check the providers and prescription drugs covered by ConnectorCare plans</h2>
+      <p>It's very important to check to see if providers you want to use for care (such as  doctors, hospitals, or health centers) and any prescription drugs you need are covered by a plan before you enroll. To find out which ConnectorCare plans cover  your providers and prescription drugs, use our online plan comparison tool. </p>
+      <a href="https://ma.checkbookhealth.org/hie/ma/2018/">
+      <button type="button">Search for providers and drugs</button>
+      </a> </div>
+    <div>
+      <h2>Know your premium and make a payment</h2>
+      <p>Once you choose a plan online or by calling Customer Service to enroll by phone, you'll need to pay your first  premium (if you have one) to complete enrollment. Payment is always due by  the 23rd of the month before your coverage begins.</p>
+      <a href="https://www.mahealthconnector.org/how-to-pay">
+      <button type="button">Learn about payment options</button>
+      </a> </div>
+  </section>
+  <section id="qhp">
+    <div>
+      <h2>Know which Health Connector plans are available for you</h2>
+      <p>First, you’ll need to know which plans are available to you. If you applied
+        online, you’ll be able to see your plan choices after you complete your
+        application and click the Find a Plan button. If you applied by paper
+        application or by phone, you can search for plans available in your area by
+        going to the account landing page and clicking on Browse Plans halfway
+        down the homepage. You can also call Customer Service.</p>
+      <a href="https://mahealthconnector.optum.com/individual/">
+      <button type="button">Browse Plans</button>
+      </a> </div>
+    <div>
+      <h2>Compare costs</h2>
+      <p>The total cost of your coverage will include your monthly premium payments
+        and your out-of-pocket costs. In general, the lower your monthly premium, the
+        higher your out-of-pocket costs will be when you get covered services.</p>
+      <p> Our plans are organized by metallic tiers (levels) to make plan premiums
+        and out-of-pocket costs easier to compare.</p>
+      <button type="button">Learn  about metallic tiers</button>
+    </div>
+    <div>
+      <h2>Check the providers and prescription drugs covered by plans</h2>
+      <p>Once you’ve narrowed your plan choices down, check to see if providers you
+        want to use for care (such as doctors, hospitals, or health centers) and any
+        prescription drugs you need are covered by a plan before you enroll. Find
+        out which plans cover your providers and prescription drugs using our online tool. </p>
+      <a href="https://ma.checkbookhealth.org/hie/ma/2018/">
+      <button type="button">Search for providers and drugs</button>
+      </a> </div>
+    <div>
+      <h2>Choose your new plan and enroll!</h2>
+      <p>After you’ve learned more about a plan’s costs and checked to see if
+        the providers you want are in its network, you will need to complete your
+        enrollment. You can enroll online at MAhealthconnector.org, or call
+        Customer Service to enroll by phone. After you choose a plan, you’ll need
+        to pay your first premium to complete enrollment. Payment is always due
+        by the 23rd of the month before your coverage begins.</p>
+      <a href="https://www.mahealthconnector.org/how-to-pay">
+      <button type="button">Learn about payment options</button>
+      </a> </div>
+  </section>
+</main>
+<footer>
+  <nav id="footer-nav"> <a href="https://www.mahealthconnector.org/site-policies/privacy-policy">Privacy</a> <a href="https://www.mahealthconnector.org/site-policies/accessibility-statement">Accessibility</a> <a href="https://www.mahealthconnector.org/site-policies">Site Polices</a> <a href="https://www.mahealthconnector.org/about/contact">Contact</a> </nav>
+  <div id="copyright">Copyright &copy; 2018 Massachusetts Health Connector.</div>
+</footer>
+
+<!-- MassHealth Modal -->
+<div id="mhModal" class="modal"> 
+  
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header"> <span class="close">&times;</span>
+      <h2>Do you qualify for MassHealth?</h2>
+    </div>
+    <div class="modal-body">
+      <p style="color: #333333;">If you are a new or current MassHealth member, you can use the MassHealth Choices website to learn about health plans and providers in your area.</p>
+    </div>
+    <div class="modal-footer"> <a href="https://www.masshealthchoices.com">
+      <button>Go to the MassHealth Choices Website</button>
+      </a> </div>
+  </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script> 
+<script>
+		
+		let mainNav=document.getElementById('main-nav');
+let navbarToggle=document.getElementById('navbar-toggle');
+
+navbarToggle.addEventListener('click',function(){
+
+    if(this.classList.contains('active')){
+        mainNav.style.display="none";
+        this.classList.remove('active');
+    }
+    else{
+        mainNav.style.display="flex";
+        this.classList.add('active');
+
+    }
+});
+	</script> 
+<script type="text/javascript" src="collapzion.min.js"></script> 
+<script type="text/javascript">
+		jQuery(function($){
+			$('#btncollapzion').Collapzion({
+	            _child_attribute:[
+	              	{
+	                  'label':'Provider & Drug Search',
+	                  'url':'https://ma.checkbookhealth.org/hie/ma/2018/index.cfm?',
+	                  'icon':'&#xe8b6;'
+	              	},
+	              	{
+		              'label':'Find Local Help',
+		              'url':'http://my.mahealthconnector.org/enrollment-assisters',
+		              'icon':'&#xe55b;'
+	              	},
+	              	{
+		              'label':'Customer Service',
+		              'url':'https://www.mahealthconnector.org/about/contact',
+		              'icon':'&#xe0cd;'
+	              	},
+					{
+		              'label':'Glossary',
+		              'url':'glossary.html',
+		              'icon':'&#xe02f;'
+	              	},
+	          	],
+	          	_main_btn_color:'rgba(247,198,68, 1.0);',
+	          	_child_btn_color:'rgba(119,172,68, 1.0);',
+				
+        	});
+		});
+		</script> 
+<script>
+function displayConnectorCare() {
+    var x = document.getElementById("connectorcare");
+    if (x.style.display = "none") {
+        x.style.display = "block";
+    }
+}
+</script> 
+<script>
+function displayQhp() {
+    var x = document.getElementById("qhp");
+    if (x.style.display = "none") {
+        x.style.display = "block";
+    }
+}
+</script> 
+<script>
+var modal = document.getElementById('mhModal');
+var btn = document.getElementById("masshealthBtn");
+var span = document.getElementsByClassName("close")[0];
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+span.onclick = function() {
+    modal.style.display = "none";
+}
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+</body>
+</html>

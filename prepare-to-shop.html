@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Prepare to Shop</title>
+	<meta charset="UTF-8">
+
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="css/collapzion.css" rel="stylesheet" type="text/css">
+<link href="css/styles.css" rel="stylesheet" type="text/css">
+<style>
+section div {
+    position: relative;
+}
+section div div {
+    margin: 1.5rem 0;
+    padding: 2.5rem;
+    background-color: rgba(255,255,255,.0);
+    border: none;
+    box-shadow: none;
+    position: absolute;
+}
+</style>
+</head>
+<body>
+<div id="btncollapzion" class=" btn_collapzion" ></div>
+<header> <a href="index.html"><img src="images/logomark.svg" alt="Health Connector Logo" id="logo"></a>
+  <nav class="navbar"> <span id="navbar-toggle"><em class="material-icons">menu</em></span>
+    <ul id="main-nav">
+      <li> <a href="index.html" class="nav-links">Home</a> </li>
+      <li> <a href="prepare-to-shop.html" class="nav-links">Prepare to Shop</a> </li>
+      <li> <a href="faqs.html" class="nav-links">FAQs</a> </li>
+      <li> <a href="get-help.html" class="nav-links">Get Help</a> </li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <section>
+    <h1>Questions to help you get started</h1>
+    <p>Answer the questions below before you start shopping for health insurance. Your answers  will help you decide which health plans are best for you and your family. Your answers will  also help you know how much you might have to pay in out-of-pocket costs for the year.</p>
+    <section id="qhp-questions">
+      <div class="worksheetBtn"> <a href="docs/plan-shopping-worksheet-2018.pdf">
+        <button>Download a worksheet</button>
+        </a> </div>
+      <div>
+        <div class="number"> <span class="numberCircle">1</span></div>
+        <p>Think about how often you and anyone on your  plan usually access health care services. Health  care services are things like going to the doctor, or  having an operation. Write down how many times  a year you expect to:</p>
+        <ul>
+          <li>Visit a Primary Care Physician (PCP)</li>
+          <li>Visit a specialist</li>
+          <li>Have tests, like blood tests or MRIs,  as part of managing a chronic condition </li>
+          <li> Have a planned surgery, birth,  or other procedure</li>
+        </ul>
+        <p>If you get health care services often, you may  want to choose a plan with a higher monthly  premium, but lower out-of-pocket costs.</p>
+      </div>
+      <div>
+        <div class="number"> <span class="numberCircle">2</span></div>
+        <p>Do you have prescription drugs that you and  anyone on your plan take regularly? If so, for each  medicine make a note with:</p>
+        <ul>
+          <li>Exact medication name</li>
+          <li>The number of pills or dose that you have  filled at the pharmacy each month </li>
+        </ul>
+        <p>Make sure that any plan you are interested  in covers all of your medicines and find out  what their costs will be.</p>
+        <p> You can find this  information with our online Plan Finder tool.</p>
+        <a href="https://PlanFinder.MAhealthconnector.org">
+        <button>Go to the Plan Finder</button>
+        </a> </div>
+      <div>
+        <div class="number"> <span class="numberCircle">3</span></div>
+        <p>Are there any doctors or specialists that you  or anyone on your plan will want to be able to see  for appointments? If so, make a list of those doctors.</p>
+      </div>
+      <div>
+        <div class="number"> <span class="numberCircle">4</span></div>
+        <p>Do you have a hospital or health center that you  or anyone on your plan will want to be able to go  to if you need care? If so, what is the name of the  hospital or health center?</p>
+        <p>Before you enroll in a plan, check to make  sure the providers (like doctors and hospitals)  you want are in the plan's network.</p>
+        <p>You can  find this information with our online tool at:  PlanFinder.MAhealthconnector.org</p>
+      </div>
+      <div class="worksheetBtn"> <a href="docs/plan-shopping-worksheet-2018.pdf">
+        <button>Download a worksheet</button>
+        </a> </div>
+    </section>
+  </section>
+</main>
+<footer>
+  <nav id="footer-nav"> <a href="https://www.mahealthconnector.org/site-policies/privacy-policy">Privacy</a> <a href="https://www.mahealthconnector.org/site-policies/accessibility-statement">Accessibility</a> <a href="https://www.mahealthconnector.org/site-policies">Site Polices</a> <a href="https://www.mahealthconnector.org/about/contact">Contact</a> </nav>
+  <div id="copyright">Copyright &copy; 2018 Massachusetts Health Connector.</div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script> 
+<script>
+		
+		let mainNav=document.getElementById('main-nav');
+let navbarToggle=document.getElementById('navbar-toggle');
+
+navbarToggle.addEventListener('click',function(){
+
+    if(this.classList.contains('active')){
+        mainNav.style.display="none";
+        this.classList.remove('active');
+    }
+    else{
+        mainNav.style.display="flex";
+        this.classList.add('active');
+
+    }
+});
+	</script> 
+<script type="text/javascript" src="js/collapzion.min.js"></script> 
+<script type="text/javascript">
+		jQuery(function($){
+			$('#btncollapzion').Collapzion({
+	            _child_attribute:[
+	              	{
+	                  'label':'Provider & Drug Search',
+	                  'url':'https://ma.checkbookhealth.org/hie/ma/2018/index.cfm?',
+	                  'icon':'&#xe8b6;'
+	              	},
+	              	{
+		              'label':'Find Local Help',
+		              'url':'http://my.mahealthconnector.org/enrollment-assisters',
+		              'icon':'&#xe55b;'
+	              	},
+	              	{
+		              'label':'Customer Service',
+		              'url':'https://www.mahealthconnector.org/about/contact',
+		              'icon':'&#xe0cd;'
+	              	},
+					{
+		              'label':'Glossary',
+		              'url':'glossary.html',
+		              'icon':'&#xe02f;'
+	              	},
+	          	],
+	          	_main_btn_color:'rgba(247,198,68, 1.0);',
+	          	_child_btn_color:'rgba(119,172,68, 1.0);',
+				
+        	});
+		});
+		</script>
+</body>
+</html>
